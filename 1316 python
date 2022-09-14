@@ -1,0 +1,11 @@
+cnt = int(input())
+chk = 0
+for k in range(0, cnt):
+    words = input()
+    for i in words:
+        if (words.rfind(i)-words.find(i)) == (words.count(i)-1):
+            chk += 1
+            break
+        else:
+            break
+print(chk)
